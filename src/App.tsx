@@ -2,6 +2,7 @@ import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import { invoke } from "@tauri-apps/api/core";
 import "./App.css";
+import { Button } from "./components/ui/button";
 
 function App() {
   const [greetMsg, setGreetMsg] = useState("");
@@ -49,6 +50,11 @@ function App() {
       <div className="absolute top-5 left-5 bg-amber-600 text-white">
         Tailwind CSS is working!
       </div>
+
+      <Button className="absolute top-15 left-5">
+        If you see this button, shadcn/ui is working!
+      </Button>
+
     </main>
   );
 }
