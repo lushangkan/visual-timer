@@ -44,6 +44,11 @@ function App() {
         <button type="submit">Greet</button>
       </form>
       <p>{greetMsg}</p>
+
+
+      <div className="absolute top-5 left-5 bg-amber-600 text-white">
+        Tailwind CSS is working!
+      </div>
     </main>
   );
 }
